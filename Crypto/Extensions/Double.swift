@@ -14,6 +14,9 @@ extension Double {
     /// Converts 1234.56 to $1,234.56
     /// ```
     private var currencyFormatter2: NumberFormatter {
+        
+        // use formatter to format numeric values.
+        
         let formatter = NumberFormatter()
         formatter.usesGroupingSeparator = true
         formatter.numberStyle = .currency
@@ -35,6 +38,7 @@ extension Double {
     /// Converts 1234.56 to "$1,234.56"
     /// ```
     func asCurrencyWith2Decimals() -> String {
+        // self means double.
         let number = NSNumber(value: self)
         return currencyFormatter2.string(from: number) ?? "$0.00"
     }
