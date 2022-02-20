@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Double is a struct
 extension Double {
     
     /// Converts a Double into a Currency with 2 decimal places

@@ -24,6 +24,7 @@
 		3D5130A427BBEC99003117DE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5130A327BBEC99003117DE /* HomeView.swift */; };
 		3D5130A827BBED79003117DE /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5130A727BBED79003117DE /* CircleButtonView.swift */; };
 		3D5130AA27BBF187003117DE /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5130A927BBF187003117DE /* CircleButtonAnimationView.swift */; };
+		3D5F504127C2809900E05207 /* LocaleFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F504027C2809900E05207 /* LocaleFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		3D5130A327BBEC99003117DE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3D5130A727BBED79003117DE /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		3D5130A927BBF187003117DE /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
+		3D5F504027C2809900E05207 /* LocaleFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				3D00D24A27BCD81200957B3D /* NetworkingManager.swift */,
+				3D5F504027C2809900E05207 /* LocaleFileManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				3D00D24127BC142F00957B3D /* Double.swift in Sources */,
 				3D00D24B27BCD81200957B3D /* NetworkingManager.swift in Sources */,
 				3D51309E27BBE8C2003117DE /* Color.swift in Sources */,
+				3D5F504127C2809900E05207 /* LocaleFileManager.swift in Sources */,
 				3D00D25027BD6D5900957B3D /* CoinImageService.swift in Sources */,
 				3D00D24827BC3E0400957B3D /* CoinDataService.swift in Sources */,
 			);

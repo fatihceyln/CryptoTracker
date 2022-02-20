@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+// Color is a struct
 extension Color {
     
     static let theme = ColorTheme()

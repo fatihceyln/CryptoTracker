@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+// PreviewProvider is a protocol
 extension PreviewProvider {
     
     static var dev: DeveloperPreview {
