@@ -221,6 +221,10 @@ class DeveloperPreview {
     )
     
     let homeVM = HomeViewModel()
+    
+    let stat1 = Statistic(title: "Market Cap", value: "$12.34Bn", percentageChange: 9.2)
+    let stat2 = Statistic(title: "Total Volume", value: "$1.23Tr")
+    let stat3 = Statistic(title: "Portfolio Volume", value: "$50.32K", percentageChange: -3.7)
 }
 
 //let newInstance = DeveloperPreview() -> It'll give you an error 'cause DeveloperPreview has private init. You can't create an object of DeveloperPreview class.
