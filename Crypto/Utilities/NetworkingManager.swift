@@ -8,6 +8,25 @@
 import Foundation
 import Combine
 
+/*
+ 
+ class NetworkingManager {
+    
+    enum NetworkingError: LocalizedError {}
+ 
+    static func download(url: URL) -> AnyPublished<Data, Error> {}
+ 
+    static func handleURLResponse(output: URLSession.DataTaskPublisher.Output, url: URL) throws -> Data {}
+ 
+    static func handleCompletion(completion: Subscribers.Completion<Error>) {}
+ 
+ }
+ 
+ 
+ 
+ */
+
+
 class NetworkingManager {
     
     enum NetworkingError: LocalizedError {

@@ -8,6 +8,27 @@
 import Foundation
 import SwiftUI
 
+/*
+
+ class LocaleFİleManager {
+    
+    static let instance = LocaleFileManager()
+    
+    private func createFolderIfNeeded(folderName: String) {}
+ 
+    private func getURLForFolder(folderName: String) -> URL? {}
+    
+    private func getURLForImage(imageName: String, folderName: String) -> URL? {}
+ 
+    func saveImage(image: UIImage, imageName: String, folderName: String) {}
+ 
+    func getImage(imageName: String, folderName: String) -> UIImage? {}
+ 
+ }
+ 
+ 
+ */
+
 class LocaleFileManager {
     
     static let instance = LocaleFileManager()

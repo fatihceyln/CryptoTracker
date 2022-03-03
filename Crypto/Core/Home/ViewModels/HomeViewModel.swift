@@ -8,6 +8,29 @@
 import Foundation
 import Combine
 
+/*
+ class HomeViewModel: ObservableObject {
+    @Published var allCoins: [Coin]
+    @Published var portfolioCoins: [Coin]
+    @Published var searchText: String
+    @Published var statistics: [Statistic]
+ 
+    private let coinDataService: CoinDataService
+    private let marketDataService: MarketDataService
+    private let portfolioDataService: PortfolioDataService
+    private var cancellables: Set<AnyCancellable>
+ 
+    private func addSubscribers()
+    
+    func updatePortfolio(coin: Coin, amount: Double)
+ 
+    private func filterCoins(text: String, coins: [Coin]) -> [Coin]
+ 
+    private func mapGlobaleMarketData(marketData: MarketData?) -> [Statistic]
+ 
+ }
+ */
+
 class HomeViewModel: ObservableObject {
     
     @Published var allCoins: [Coin] = []
@@ -15,12 +38,7 @@ class HomeViewModel: ObservableObject {
     
     @Published var searchText: String = ""
     
-    @Published var statistics: [Statistic] = [
-        Statistic(title: "title", value: "value", percentageChange: 1),
-        Statistic(title: "title", value: "value", percentageChange: nil),
-        Statistic(title: "title", value: "value", percentageChange: nil),
-        Statistic(title: "title", value: "value", percentageChange: -3)
-    ]
+    @Published var statistics: [Statistic] = []
     
     private let coinDataService = CoinDataService()
     private let marketDataService = MarketDataService()
