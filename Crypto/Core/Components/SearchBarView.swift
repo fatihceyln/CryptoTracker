@@ -22,19 +22,22 @@ struct SearchBarView: View {
             TextField("Search by name or symbol...", text: $searchText)
                 .disableAutocorrection(true)
                 .foregroundColor(Color.theme.accent)
-                .overlay(alignment: .trailing) {
-                    Image(systemName: "xmark.circle.fill")
-                        .foregroundColor(.theme.accent)
-                        .padding()
-                        .offset(x: 10)
-                        .opacity(searchText.isEmpty ? 0.0 : 1.0)
-                        .onTapGesture {
-                            searchText = ""
-                            UIApplication.shared.endEditing()
-                        }
+                
+            Image(systemName: "xmark.circle.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 20, height: 20, alignment: .trailing)
+                .foregroundColor(.theme.accent)
+                .padding(10)
+                .opacity(searchText.isEmpty ? 0.0 : 1.0)
+                .onTapGesture {
+                    searchText = ""
+                    UIApplication.shared.endEditing()
                 }
+                
         }
         .font(.headline)
+        .frame(height: 30)
         .padding()
         .background(
             RoundedRectangle(cornerRadius: 10)
