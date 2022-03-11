@@ -42,10 +42,13 @@ class NetworkingManager {
     
     static func download(url: URL) -> AnyPublisher<Data, Error> {
         URLSession.shared.dataTaskPublisher(for: url)
-            .subscribe(on: DispatchQueue.global(qos: .default))
+            //.subscribe(on: DispatchQueue.global(qos: .default))
             .tryMap({ try handleURLResponse(output: $0, url: url) })
-            .receive(on: DispatchQueue.main)
+            //.receive(on: DispatchQueue.main)
+            .retry(3) // -> If url response fails it'll try for 3 more times.
             .eraseToAnyPublisher()
+        
+        // I will receive on main after decoding background thread.
     }
     
     static func handleURLResponse(output: URLSession.DataTaskPublisher.Output, url: URL) throws -> Data {
