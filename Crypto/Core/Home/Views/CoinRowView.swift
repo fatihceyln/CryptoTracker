@@ -11,6 +11,7 @@ struct CoinRowView: View {
     
     let coin: Coin
     let showHoldingsColumn: Bool
+    var manager = CacheManager.shared
     
     var body: some View {
         
@@ -22,7 +23,12 @@ struct CoinRowView: View {
             
             if showHoldingsColumn {
                 centerColumn
+            } else {
+                ChartCoinRowView(coin: coin)
+                    .padding(.trailing, 25)
             }
+            
+            //Spacer()
             
             rightColumn
         }
@@ -81,7 +87,7 @@ extension CoinRowView {
 struct CoinRowView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CoinRowView(coin: dev.coin, showHoldingsColumn: true)
+            CoinRowView(coin: dev.coin, showHoldingsColumn: false)
                 .previewLayout(.sizeThatFits)
             
             CoinRowView(coin: dev.coin, showHoldingsColumn: true)
