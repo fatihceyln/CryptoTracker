@@ -134,6 +134,17 @@ extension HomeView {
                         segue(coin: coin)
                     }
                     .listRowBackground(Color.theme.background)
+                    .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+                        Button(role: .destructive) {
+                            withAnimation(.spring()) {
+                                vm.updatePortfolio(coin: coin, amount: 0)
+                            }
+                        } label: {
+                            Image(systemName: "trash.fill")
+                                .tint(.red)
+                        }
+
+                    }
             }
         }
         .listStyle(.plain)
