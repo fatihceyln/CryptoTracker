@@ -61,7 +61,7 @@ extension PortfolioView {
                 ForEach(vm.searchText.isEmpty ? vm.portfolioCoins : vm.allCoins) { coin in
                     CoinLogoView(coin: coin)
                         .frame(width: 75)
-                        .padding(4)
+                        .padding(10)
                         .onTapGesture {
                             withAnimation(.easeIn) {
                                 updateSelectedCoin(coin: coin)
@@ -69,8 +69,7 @@ extension PortfolioView {
                         }
                         .background(
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(selectedCoin?.id == coin.id ? Color.theme.green : Color.clear,
-                                        lineWidth: 1)
+                                .foregroundColor(selectedCoin?.id == coin.id ? Color.theme.selectedCoin : Color.theme.background)
                         )
                 }
             }
@@ -183,6 +182,7 @@ extension PortfolioView {
 struct PortfolioView_Previews: PreviewProvider {
     static var previews: some View {
         PortfolioView(showView: .constant(true))
+            .preferredColorScheme(.light)
             .environmentObject(dev.homeVM)
     }
 }
