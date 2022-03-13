@@ -15,7 +15,7 @@ struct SettingsView: View {
     let youtubeURL = URL(string: "https://www.youtube.com/c/SwiftfulThinking")!
     let coffeULR = URL(string: "https://www.buymeacoffee.com/nicksarno")!
     let coingeckoURL = URL(string: "https://coingecko.com")!
-    let personalURL = URL(string: "https://www.nicksarno.com")!
+    let personalURL = URL(string: "https://github.com/fatihceyln")!
     
     var body: some View {
         NavigationView {
