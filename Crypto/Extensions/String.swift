@@ -9,7 +9,7 @@ import Foundation
 
 extension String {
     
-    var removingHTMLOccurances: String {
+    var removingHTMLOccurrences: String {
         return self.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
     }
 }

@@ -39,7 +39,7 @@ struct LaunchView: View {
                      */
                     
                     HStack(spacing: 0) {
-                        ForEach(loadingText.indices) { index in
+                        ForEach(loadingText.indices, id: \.self) { index in
                             Text(loadingText[index])
                                 .font(.headline)
                                 .fontWeight(.heavy)

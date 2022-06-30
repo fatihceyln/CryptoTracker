@@ -113,8 +113,8 @@
 		3D00D23927BBF74200957B3D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3D3B04FF27D753ED003635A1 /* CoinDetail.swift */,
 				3D00D23A27BBFAAD00957B3D /* Coin.swift */,
+				3D3B04FF27D753ED003635A1 /* CoinDetail.swift */,
 				3D976B7227C3FDF20022D3CA /* Statistic.swift */,
 				3D976B7827C403CD0022D3CA /* MarketData.swift */,
 				3D0EF8D527CD23350025A7C0 /* PortfolioContainer.xcdatamodeld */,

@@ -75,7 +75,7 @@ struct ChartCoinRowView: View {
                     cacheManager.addChart(id: coin.id, userSaw: true)
                 }
             }
-            
+    
             return
         }
     }
